@@ -27,8 +27,8 @@ Setup SSH:
 Deploy braindump:
 -----------------
 - *TODO*
-- create config file on raspberry pi (/var/www/braindump/braindump-config.php)
-- create config file on raspberry pi (/var/www/braindump/public/client/config.js)
+- create config file on raspberry pi (/var/www/servers/braindump.[servername]/braindump-config.php)
+- create config file on raspberry pi (/var/www/servers/braindump.[servername]/public/client/config.js)
 - run /var/www/braindump/vendor/bin/phake setup (creates initial db) (TODO: Create config file from phake)
 - create new admin user, delete default admin user
 - setup cronjob for checking new inbound emails
