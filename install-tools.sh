@@ -2,8 +2,5 @@
 
 apt-get update
 
-#install rsync
-apt-get install rsync
-
-#install git (needed for letsencrypt
-apt-get install git
+#install rsync and git (needed for letsencrypt)
+apt-get install rsync git

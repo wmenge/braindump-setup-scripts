@@ -1,11 +1,16 @@
 #!/bin/bash
 
+# remove apache
+apt-get remove apache2
+apt-get remove apache2*
+apt-get autoremove
+
 # Install Lightpd
 apt-get update
 apt-get install -y lighttpd
 
-# Install php5 + sqlite + needed extensions
-apt-get -y install sqlite3 php5-common php5-cgi php5 php5-sqlite php5-imap
+# Install php7 + sqlite + needed extensions
+apt-get -y install sqlite3 php php-cgi php-imap
 
 # tell lighttpd about php
 lighty-enable-mod fastcgi-php
