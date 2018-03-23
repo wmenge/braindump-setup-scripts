@@ -10,7 +10,7 @@ apt-get update
 apt-get install -y lighttpd
 
 # Install php7 + sqlite + needed extensions
-apt-get -y install sqlite3 php php-cgi php-imap php-sqlite3
+apt-get -y install sqlite3 php php-cgi php-imap php-sqlite3 php-mbstring
 
 # tell lighttpd about php
 lighty-enable-mod fastcgi-php
